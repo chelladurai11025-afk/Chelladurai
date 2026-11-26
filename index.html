@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>V. Chelladurai | Mechanical Engineer • Mount Zion College of Engineering</title>
+  
+  <!-- SEO & Social Meta -->
+  <meta name="description" content="Portfolio of V. Chelladurai - 1st Year Mechanical Engineering Student at Mount Zion College of Engineering. CAD, Dynamics & Multiverse Gallery.">
+  <meta property="og:title" content="V. Chelladurai - Mechanical Engineering Portfolio">
+  <meta property="og:description" content="Mount Zion College of Engineering • Spider-Man x Japanese Anime theme portfolio with interactive multiverse gallery.">
+  <meta property="og:image" content="assets/profile.jpg">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Comic Halftone & Interactive Canvas Background -->
+  <div class="manga-overlay"></div>
+  <canvas id="spider-canvas"></canvas>
+
+  <!-- NAVIGATION BAR -->
+  <nav class="navbar">
+    <a href="#hero" class="brand-logo">
+      <div class="spider-icon-badge">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 2C10.9 2 10 2.9 10 4C10 4.4 10.1 4.8 10.4 5.1C8.3 5.7 6.6 7.4 6.2 9.7L3.1 8.2C2.7 8 2.2 8.2 2 8.6C1.8 9 2 9.5 2.4 9.7L5.7 11.3C5.7 11.5 5.7 11.8 5.7 12C5.7 12.2 5.7 12.5 5.7 12.7L2.4 14.3C2 14.5 1.8 15 2 15.4C2.2 15.8 2.7 16 3.1 15.8L6.2 14.3C6.6 16.6 8.3 18.3 10.4 18.9C10.1 19.2 10 19.6 10 20C10 21.1 10.9 22 12 22C13.1 22 14 21.1 14 20C14 19.6 13.9 19.2 13.6 18.9C15.7 18.3 17.4 16.6 17.8 14.3L20.9 15.8C21.3 16 21.8 15.8 22 15.4C22.2 15 22 14.5 21.6 14.3L18.3 12.7C18.3 12.5 18.3 12.2 18.3 12C18.3 11.8 18.3 11.5 18.3 11.3L21.6 9.7C22 9.5 22.2 9 22 8.6C21.8 8.2 21.3 8 20.9 8.2L17.8 9.7C17.4 7.4 15.7 5.7 13.6 5.1C13.9 4.8 14 4.4 14 4C14 2.9 13.1 2 12 2M12 7C14.2 7 16 8.8 16 11C16 12.1 15.6 13.1 14.9 13.9L13.5 12.5L12 14L10.5 12.5L9.1 13.9C8.4 13.1 8 12.1 8 11C8 8.8 9.8 7 12 7M12 15.5L13.8 17.3C13.3 17.8 12.7 18 12 18C11.3 18 10.7 17.8 10.2 17.3L12 15.5Z"/>
+        </svg>
+      </div>
+      <div class="brand-text">
+        <div class="brand-title">CHELLADURAI<span>.V</span></div>
+        <div class="brand-subtitle">MOUNT ZION COLLEGE OF ENG. // 影の炎</div>
+      </div>
+    </a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hero" class="nav-link active">Home</a></li>
+      <li><a href="#origin" class="nav-link">Origin</a></li>
+      <li><a href="#arsenal" class="nav-link">Arsenal</a></li>
+      <li><a href="#blueprints" class="nav-link">Projects</a></li>
+      <li><a href="#dispatch" class="nav-link">Dispatch</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <!-- Web Audio SFX Toggle -->
+      <button class="sfx-btn active" id="sfxToggleBtn" title="Toggle Anime & Spidey Sound Effects">
+        <span>⚡</span>
+        <span class="sfx-state">SFX: ON</span>
+      </button>
+
+      <!-- Quick Contact Button -->
+      <a href="tel:6380591016" class="btn-contact-top">
+        <span>CALL BEACON</span>
+      </a>
+
+      <!-- Mobile Hamburger -->
+      <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ==========================================================================
+       HERO SECTION
+       ========================================================================== -->
+  <section class="hero-section" id="hero">
+    <div class="kanji-watermark">蜘蛛男</div>
+    <div class="container">
+      <div class="hero-grid">
+        <!-- Hero Text -->
+        <div class="hero-content">
+          <div class="hero-college-tag">
+            <span>🏛️</span> MOUNT ZION COLLEGE OF ENGINEERING • YEAR 01
+          </div>
+          
+          <div class="hero-name-kanji">チェラドゥライ • V. CHELLADURAI</div>
+          
+          <h1 class="hero-title">
+            ENGINEERING <br>
+            <span class="glow-highlight">THE SPIDER-VERSE</span>
+          </h1>
+
+          <div class="hero-subtitle">
+            <span>⚡</span> Mechanical Engineering Student | Mount Zion College of Engineering
+          </div>
+
+          <p class="hero-bio">
+            Representing <strong class="hero-college-highlight">Mount Zion College of Engineering</strong> with <strong>anime protagonist determination</strong> and <strong>Peter Parker's inventive grit</strong>. Diving deep into machine kinetics, thermodynamics, structural designs, and CAD modeling. Ready to swing across any complex engineering challenge!
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="https://www.instagram.com/_shadow_flamzz?utm_source=ig_web_button_share_sheet&dmpr=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener" class="btn-primary">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+              <span>INSTAGRAM : @_shadow_flamzz</span>
+            </a>
+
+            <a href="tel:6380591016" class="btn-secondary">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+              </svg>
+              <span>CALL : +91 6380591016</span>
+            </a>
+          </div>
+
+          <!-- Hero Meta Badges -->
+          <div class="hero-meta-badges">
+            <div class="meta-item">
+              <div class="meta-val">MOUNT ZION</div>
+              <div class="meta-label">College of Eng.</div>
+            </div>
+            <div class="meta-item">
+              <div class="meta-val">YEAR 01</div>
+              <div class="meta-label">Mechanical Eng.</div>
+            </div>
+            <div class="meta-item">
+              <div class="meta-val">CAD & DYNAMICS</div>
+              <div class="meta-label">Core Focus</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual: Manga Card with Profile Picture Slider (Swipeable) -->
+        <div class="hero-visual">
+          <div class="manga-card-wrapper">
+            <div class="anime-aura-glow"></div>
+            
+            <!-- Floating Swipe Guide Pill -->
+            <div class="swipe-instruction-pill">
+              <span>👈 SWIPE TO SHIFT MULTIVERSE 👉</span>
+            </div>
+
+            <div class="manga-card" id="heroMangaCard" title="Swipe left/right or click arrows to change photos!">
+              <!-- Dynamic Manga Tags -->
+              <div class="card-manga-tag" id="heroCardMangaTag">SSR // APEX HERO</div>
+              <div class="card-power-tag" id="heroCardPowerTag">POWER: 9999+</div>
+
+              <!-- Nav Arrows for Desktop & Easy Tap -->
+              <button class="card-nav-arrow prev" id="heroPrevBtn" aria-label="Previous Photo" title="Previous photo">‹</button>
+              <button class="card-nav-arrow next" id="heroNextBtn" aria-label="Next Photo" title="Next photo">›</button>
+
+              <!-- Photo Slider Container (Touch & Mouse Drag Support) -->
+              <div class="photo-container" id="heroPhotoSlider">
+                <!-- Slide 1: Fortress Hero Shot -->
+
+                <div class="profile-slide active" 
+                     data-tag="SSR // APEX HERO" 
+                     data-power="POWER: 9999+" 
+                     data-sfx="* THWIP! *" 
+                     data-status="HIGH GROUND MASONRY">
+                  <img src="profile.jpg" alt="V. Chelladurai Citadel Vantage" class="profile-img">
+                </div>
+
+                <!-- Slide 2: Jawa 42 Motorcycle -->
+                <div class="profile-slide" 
+                     data-tag="SSR // JAWA 42" 
+                     data-power="POWER: 27 BHP" 
+                     data-sfx="* ROAR! *" 
+                     data-status="293cc TWIN EXHAUST">
+                  <img src="gallery_bike.jpg" alt="V. Chelladurai on Jawa 42 Motorcycle" class="profile-img">
+                </div>
+
+                <!-- Slide 3: Mahindra Commander 4x4 Jeep -->
+                <div class="profile-slide" 
+                     data-tag="SSR // 4X4 COMMANDER" 
+                     data-power="TORQUE: 4X4 MAX" 
+                     data-sfx="* VROOM! *" 
+                     data-status="HEAVY CHASSIS CRUISER">
+                  <img src="gallery_jeep.jpg" alt="V. Chelladurai with Mahindra Commander" class="profile-img">
+                </div>
+
+                <!-- Slide 4: Black Suit Gala -->
+                <div class="profile-slide" 
+                     data-tag="SSR // FORMAL SUIT" 
+                     data-power="CHARISMA: 100%" 
+                     data-sfx="* BOSS! *" 
+                     data-status="TACTICAL EXECUTIVE">
+                  <img src="gallery_suit.png" alt="V. Chelladurai in Black Suit" class="profile-img">
+                </div>
+
+                <!-- Slide 5: Waterfall Nature -->
+                <div class="profile-slide" 
+                     data-tag="SSR // WATERFALL" 
+                     data-power="FLOW: 1200 L/M" 
+                     data-sfx="* SPLASH! *" 
+                     data-status="HYDRAULIC TURBULENCE">
+                  <img src="gallery_waterfall.jpg" alt="V. Chelladurai by Waterfall" class="profile-img">
+                </div>
+
+                <!-- Slide 6: Bougainvillea Garden -->
+                <div class="profile-slide" 
+                     data-tag="SSR // ZEN GARDEN" 
+                     data-power="SERENITY: 100%" 
+                     data-sfx="* BLOOM! *" 
+                     data-status="BOUGAINVILLEA ZONE">
+                  <img src="gallery_flowers.jpg" alt="V. Chelladurai with Bougainvillea Flowers" class="profile-img">
+                </div>
+
+                <!-- Slide 7: Campus Life -->
+                <div class="profile-slide" 
+                     data-tag="SSR // CAMPUS VIBE" 
+                     data-power="ENERGY: 100%" 
+                     data-sfx="* SHINE! *" 
+                     data-status="MOUNT ZION DAILY">
+                  <img src="gallery_smile.png" alt="V. Chelladurai smiling outdoors" class="profile-img">
+                </div>
+              </div>
+
+              <!-- Pagination Dots -->
+              <div class="slider-dots-container" id="heroSliderDots"></div>
+
+              <!-- Card Bottom Info -->
+              <div class="card-footer-info">
+                <div class="card-player-id">MOUNT ZION COE • ID: @_shadow_flamzz</div>
+                <div class="card-player-name">V. CHELLADURAI</div>
+                <div class="card-stats-meter">
+                  <div class="stat-chip">
+                    <span class="spider-sense-active-indicator"></span>
+                    <span id="heroStatStatusText">SPIDEY SENSE: ACTIVE</span>
+                  </div>
+                  <div class="stat-chip" style="color: var(--neon-yellow);">
+                    <span id="heroStatSubText">HIGH GROUND MASONRY</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating Comic SFX Bubble -->
+            <div class="comic-sfx-bubble" id="heroComicSfxBubble">
+              * THWIP! *
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       ABOUT & ORIGIN SECTION
+       ========================================================================== -->
+  <section id="origin">
+    <div class="kanji-watermark">起源</div>
+    <div class="container">
+      <div class="section-badge">HERO ORIGIN & MANIFESTO</div>
+      <h2 class="section-title">THE WAY OF <span class="accent-red">MECHANICAL</span> MASTERY</h2>
+      <p class="section-desc">
+        Just as Spider-Man crafts his own web-shooters and high-tech suits, true mechanical engineering is about building what seems impossible from scratch.
+      </p>
+
+      <div class="origin-grid">
+        <!-- Story Card -->
+        <div class="origin-card">
+          <h3 class="origin-card-title">
+            <span>⚙️</span> The Protagonist Journey
+          </h3>
+
+          <!-- College Banner inside About -->
+          <div class="college-origin-box">
+            <div class="college-badge-header">⚡ ACADEMIC HEADQUARTERS</div>
+            <div class="college-name-title">Mount Zion College of Engineering</div>
+            <div class="college-dept">Department of Mechanical Engineering • 1st Year Undergrad</div>
+          </div>
+
+          <p class="origin-text">
+            I am <strong>V. Chelladurai</strong>, a passionate first-year Mechanical Engineering student at <strong>Mount Zion College of Engineering</strong>. Driven by curiosity for machines, gears, thermodynamics, and physical dynamics. Every machine tells an anime-like battle of forces—torque vs resistance, heat vs energy, precision vs chaos.
+          </p>
+          <div class="comic-quote-box">
+            <p>"With great mechanical ingenuity comes great engineering responsibility."</p>
+            <span>— CHELLADURAI'S CREED // 影の炎</span>
+          </div>
+          <p class="origin-text">
+            Whether analyzing mechanical linkages, designing 3D components, or testing fabrication techniques, I bring relentless persistence, creative out-of-the-box thinking, and precision.
+          </p>
+        </div>
+
+        <!-- Stat Progression Card -->
+        <div class="origin-card">
+          <h3 class="origin-card-title">
+            <span>📊</span> Power Ratings & Attributes
+          </h3>
+          <div class="stat-bars-container">
+            <!-- Stat 1 -->
+            <div class="stat-item">
+              <div class="stat-header">
+                <span class="stat-title">📐 CAD Modeling & Graphics</span>
+                <span class="stat-percent">88%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-fill" style="width: 88%;"></div>
+              </div>
+            </div>
+
+            <!-- Stat 2 -->
+            <div class="stat-item">
+              <div class="stat-header">
+                <span class="stat-title">🔥 Thermodynamics & Heat Transfer</span>
+                <span class="stat-percent">84%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-fill" style="width: 84%;"></div>
+              </div>
+            </div>
+
+            <!-- Stat 3 -->
+            <div class="stat-item">
+              <div class="stat-header">
+                <span class="stat-title">⚙️ Machine Dynamics & Kinematics</span>
+                <span class="stat-percent">86%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-fill" style="width: 86%;"></div>
+              </div>
+            </div>
+
+            <!-- Stat 4 -->
+            <div class="stat-item">
+              <div class="stat-header">
+                <span class="stat-title">🛠️ Workshop & Fabrication Skills</span>
+                <span class="stat-percent">92%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-fill" style="width: 92%;"></div>
+              </div>
+            </div>
+
+            <!-- Stat 5 -->
+            <div class="stat-item">
+              <div class="stat-header">
+                <span class="stat-title">🕷️ Spider Reflexes & Adaptability</span>
+                <span class="stat-percent">99%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-fill" style="width: 99%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ==========================================================================
+       ENGINEERING ARSENAL / SKILLS
+       ========================================================================== -->
+  <section id="arsenal">
+    <div class="kanji-watermark">能力</div>
+    <div class="container">
+      <div class="section-badge">EQUIPMENT & CAPABILITIES</div>
+      <h2 class="section-title">THE ENGINEERING <span class="accent-blue">ARSENAL</span></h2>
+      <p class="section-desc">
+        A versatile toolkit blending fundamental mechanical science, computer-aided design, and futuristic vision taught at Mount Zion College of Engineering.
+      </p>
+
+      <div class="skills-grid">
+        <!-- Skill 1 -->
+        <div class="skill-card">
+          <div class="skill-icon-wrap">
+            <svg viewBox="0 0 24 24"><path d="M12 2l10 6v8l-10 6L2 16V8l10-6zm0 2.23L4 9l8 4.77L20 9l-8-4.77zM4 10.77V15l7.5 4.5v-4.23L4 10.77zm16 0l-7.5 4.5v4.23L20 15v-4.23z"/></svg>
+          </div>
+          <span class="skill-badge">TOOLKIT // 01</span>
+          <h3 class="skill-title">Engineering CAD</h3>
+          <p class="skill-desc">Solid modeling, geometric dimensioning & tolerancing (GD&T), orthographic and isometric projection generation.</p>
+        </div>
+
+        <!-- Skill 2 -->
+        <div class="skill-card">
+          <div class="skill-icon-wrap">
+            <svg viewBox="0 0 24 24"><path d="M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.23.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z"/></svg>
+          </div>
+          <span class="skill-badge">TOOLKIT // 02</span>
+          <h3 class="skill-title">Mechanics & Dynamics</h3>
+          <p class="skill-desc">Understanding planar mechanisms, velocity vectors, equilibrium of rigid bodies, and stress distributions.</p>
+        </div>
+
+        <!-- Skill 3 -->
+        <div class="skill-card">
+          <div class="skill-icon-wrap">
+            <svg viewBox="0 0 24 24"><path d="M13.5.67s.74 2.65.74 4.8c0 2.06-1.35 3.73-3.41 3.73-2.07 0-3.63-1.67-3.63-3.73l.03-.36C5.21 7.51 4 10.62 4 14c0 4.42 3.58 8 8 8s8-3.58 8-8C20 8.61 17.41 3.8 13.5.67zM11.71 19c-1.78 0-3.22-1.4-3.22-3.14 0-1.62 1.05-2.76 2.81-3.12 1.77-.36 3.6-1.21 4.62-2.58.39 1.29.59 2.65.59 4.04 0 2.65-2.15 4.8-4.8 4.8z"/></svg>
+          </div>
+          <span class="skill-badge">TOOLKIT // 03</span>
+          <h3 class="skill-title">Thermodynamics</h3>
+          <p class="skill-desc">Carnot cycles, energy conservation laws, thermal efficiency optimization, and heat exchanger mechanisms.</p>
+        </div>
+
+        <!-- Skill 4 -->
+        <div class="skill-card">
+          <div class="skill-icon-wrap">
+            <svg viewBox="0 0 24 24"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg>
+          </div>
+          <span class="skill-badge">TOOLKIT // 04</span>
+          <h3 class="skill-title">Workshop Fabrication</h3>
+          <p class="skill-desc">Hands-on lathe machining, fitting, welding fundamentals, sheet metal fabrication, and tool assembly.</p>
+        </div>
+
+        <!-- Skill 5 -->
+        <div class="skill-card">
+          <div class="skill-icon-wrap">
+            <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.5h-2v-2h2v2zm0-4h-2V7h2v5.5z"/></svg>
+          </div>
+          <span class="skill-badge">TOOLKIT // 05</span>
+          <h3 class="skill-title">Material Science</h3>
+          <p class="skill-desc">Study of ferrous/non-ferrous alloys, polymers, composite tensile strength, fatigue limits, and heat treatment.</p>
+        </div>
+
+        <!-- Skill 6 -->
+        <div class="skill-card">
+          <div class="skill-icon-wrap">
+            <svg viewBox="0 0 24 24"><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg>
+          </div>
+          <span class="skill-badge">TOOLKIT // 06</span>
+          <h3 class="skill-title">Tech & Problem Solving</h3>
+          <p class="skill-desc">Algorithm thinking, technical documentation, scientific calculation tools, and engineering analytics.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PROJECT BLUEPRINTS (MANGA PANELS)
+       ========================================================================== -->
+  <section id="blueprints">
+    <div class="kanji-watermark">計画</div>
+    <div class="container">
+      <div class="section-badge">BLUEPRINTS & INVENTIONS</div>
+      <h2 class="section-title">PROJECT <span class="accent-red">ARCHIVES</span></h2>
+      <p class="section-desc">
+        Explore innovative concept builds and engineering studies inspired by cutting-edge mechanics and superhero utility.
+      </p>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-panel">
+          <div class="panel-header">
+            <div class="panel-header-pattern"></div>
+            <div class="panel-blueprint-tag">CAD BLUEPRINT // 01</div>
+            <div class="panel-schematic-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+            </div>
+          </div>
+          <div class="panel-body">
+            <div class="project-category">Kinetics & Fluidics</div>
+            <h3 class="project-title">Pneumatic Web Launcher Mechanism</h3>
+            <p class="project-desc">A mechanical wrist-mounted dual-chamber pneumatic launcher concept studying high-pressure micro-nozzle valves and rapid polymer tether deployment.</p>
+            <div class="project-tags">
+              <span class="tag-pill">SolidWorks</span>
+              <span class="tag-pill">Pneumatics</span>
+              <span class="tag-pill">Nozzle Flow</span>
+            </div>
+            <a href="#dispatch" class="panel-link-btn">
+              <span>EXPLORE SCHEMATIC</span>
+              <span>→</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-panel">
+          <div class="panel-header">
+            <div class="panel-header-pattern"></div>
+            <div class="panel-blueprint-tag">THERMAL SYSTEM // 02</div>
+            <div class="panel-schematic-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 3C6.5 3 2 6.5 2 12c0 3.58 2.5 6.58 6 7.5v-2.13C5.54 16.5 4 14.48 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8c0 2.48-1.54 4.5-4 5.37v2.13c3.5-.92 6-3.92 6-7.5 0-5.5-4.5-9-10-9zm1 7h-2v6h2v-6zm0-4h-2v2h2V6z"/></svg>
+            </div>
+          </div>
+          <div class="panel-body">
+            <div class="project-category">Thermodynamics</div>
+            <h3 class="project-title">"Shadow Flame" Heat Exchanger</h3>
+            <p class="project-desc">Analyzing counter-flow micro-channel heat dissipation systems for high-load compact mechanical engines, minimizing thermal bottlenecking.</p>
+            <div class="project-tags">
+              <span class="tag-pill">Heat Transfer</span>
+              <span class="tag-pill">CFD Concept</span>
+              <span class="tag-pill">Thermal Efficiency</span>
+            </div>
+            <a href="#dispatch" class="panel-link-btn">
+              <span>EXPLORE SCHEMATIC</span>
+              <span>→</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-panel">
+          <div class="panel-header">
+            <div class="panel-header-pattern"></div>
+            <div class="panel-blueprint-tag">ROBOTICS // 03</div>
+            <div class="panel-schematic-icon">
+              <svg viewBox="0 0 24 24"><path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/></svg>
+            </div>
+          </div>
+          <div class="panel-body">
+            <div class="project-category">Kinematics & Bio-mechanics</div>
+            <h3 class="project-title">Octo-Leg Bio-Kinetic Rover</h3>
+            <p class="project-desc">Inspired by arachnid leg articulation, a multi-degree-of-freedom terrain walker calculating joint stress distributions and self-leveling torque balance.</p>
+            <div class="project-tags">
+              <span class="tag-pill">Linkage Analysis</span>
+              <span class="tag-pill">Kinematics</span>
+              <span class="tag-pill">Robotics</span>
+            </div>
+            <a href="#dispatch" class="panel-link-btn">
+              <span>EXPLORE SCHEMATIC</span>
+              <span>→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CONTACT / SPIDER-DISPATCH BEACON SECTION
+       ========================================================================== -->
+  <section class="contact-section" id="dispatch">
+    <div class="kanji-watermark">通信</div>
+    <div class="container">
+      <div class="section-badge">EMERGENCY COMM-LINK</div>
+      <h2 class="section-title">DISPATCH <span class="accent-red">BEACON</span></h2>
+      <p class="section-desc">
+        Need an enthusiastic mechanical engineering student from Mount Zion College of Engineering, an ambitious project partner, or have questions? Fire your signal directly!
+      </p>
+
+      <div class="contact-card-main">
+        <div class="contact-grid">
+          <!-- Contact Direct Links -->
+          <div class="contact-info-col">
+            <h3>TRANSMIT YOUR SIGNAL</h3>
+            <p>
+              Direct frequencies are open 24/7. Whether it's college symposiums, CAD collaborations, mechanical inquiries, or networking, let's connect!
+            </p>
+
+            <div class="contact-methods">
+              <!-- Phone -->
+              <a href="tel:6380591016" class="contact-item-link">
+                <div class="contact-icon-box icon-phone">
+                  <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                </div>
+                <div class="contact-details-text">
+                  <span class="contact-sub-lbl">VOICE BEACON // PHONE</span>
+                  <span class="contact-main-val">+91 6380591016</span>
+                </div>
+              </a>
+
+              <!-- Instagram -->
+              <a href="https://www.instagram.com/_shadow_flamzz?utm_source=ig_web_button_share_sheet&dmpr=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener" class="contact-item-link">
+                <div class="contact-icon-box icon-insta">
+                  <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                </div>
+                <div class="contact-details-text">
+                  <span class="contact-sub-lbl">INSTAGRAM HOLOGRAM</span>
+                  <span class="contact-main-val">@_shadow_flamzz</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Quick Web Message Box -->
+          <div class="contact-form-col">
+            <h4><span>🕸️</span> SHOOT A DIRECT SIGNAL</h4>
+            <form id="spiderContactForm">
+              <div class="form-group">
+                <label for="senderName">Agent Name</label>
+                <input type="text" id="senderName" class="form-control" placeholder="Enter your name..." required>
+              </div>
+              <div class="form-group">
+                <label for="senderMessage">Mission Brief / Message</label>
+                <textarea id="senderMessage" class="form-control" placeholder="Write your message here..." required></textarea>
+              </div>
+              <button type="submit" class="btn-submit-signal">
+                TRANSMIT WEB SIGNAL ⚡
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-logo">V. CHELLADURAI <span>// 影の炎</span></div>
+      <div class="footer-college-tag">
+        MOUNT ZION COLLEGE OF ENGINEERING • DEPARTMENT OF MECHANICAL ENGINEERING (YEAR 01)
+      </div>
+      <p class="footer-quote">
+        <strong>"With great curiosity comes great innovation"</strong>
+      </p>
+      <div class="footer-bottom-text">
+        © 2026 V. CHELLADURAI • POWERED BY SPIDER-VERSE & ANIME RESOLVE
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
